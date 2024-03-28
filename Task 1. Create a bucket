@@ -1,0 +1,4 @@
+#You need to create a bucket called Bucket Name for the storage of the photographs. Ensure the resource is created in the REGION region and ZONE zone.
+gcloud config set compute/region us-central1
+Create a bucket
+gsutil mb gs://qwiklabs-gcp-03-63280c2991fc-bucket
