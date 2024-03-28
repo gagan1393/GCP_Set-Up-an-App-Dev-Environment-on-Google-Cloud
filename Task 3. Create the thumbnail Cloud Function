@@ -1,0 +1,15 @@
+#Create a Cloud Function Cloud Function Name that will to create a thumbnail from an image added to the Bucket Name bucket. Ensure the Cloud Function is using the 2nd Generation environment. Ensure the resource is created in the REGION region and ZONE zone
+gcloud config set compute/region us-east1
+gcloud config set compute/region us-east1
+mkdir memories-thumbnail-maker
+cd memories-thumbnail-maker
+nano index.js
+nano package.json
+Deploy your function
+
+gcloud functions deploy memories-thumbnail-maker \
+  --stage-bucket qwiklabs-gcp-03-63280c2991fc-bucket \
+  --trigger-topic topic-memories-900 \
+  --runtime nodejs20
+
+gcloud functions describe memories-thumbnail-maker
