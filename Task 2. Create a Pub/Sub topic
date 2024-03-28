@@ -1,0 +1,2 @@
+#Create a Pub/Sub topic called Topic Name for the Cloud Function to send messages.
+gcloud pubsub topics create topic-memories-900
